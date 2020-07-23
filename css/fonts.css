@@ -1,0 +1,123 @@
+/***************************************************
+# Lato
+***************************************************/
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/***************************************************
+# Noto Sans
+***************************************************/
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/Lato-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/***************************************************
+# Roboto
+***************************************************/
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/***************************************************
+# Bebas Neue
+***************************************************/
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/***************************************************
+# Swanky and Moo Moo
+***************************************************/
+@font-face {
+    font-family: "Swanky and Moo Moo";
+    src: url("../fonts/SwankyandMooMoo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/***************************************************
+# Shadows Into Light
+***************************************************/
+@font-face {
+    font-family: "Shadows Into Light";
+    src: url("../fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/***************************************************
+# IM Fell Great Primer
+***************************************************/
+@font-face {
+    font-family: "IM Fell Great Primer";
+    src: url("../fonts/IMFellGreatPrimer-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "IM Fell Great Primer";
+    src: url("../fonts/IMFellGreatPrimer-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
