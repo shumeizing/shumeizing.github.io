@@ -299,7 +299,7 @@ nav {
 .wrapper {
   min-height: 100%;
   margin-top: 6vh;
-  margin-bottom: -15vh;
+  margin-bottom: -10vh;
 }
 
 /***************************************************
@@ -726,15 +726,33 @@ nav {
 # Footer
 ***************************************************/
 .push, .footer {
-  height: 15vh;
+  height: 10vh;
   background-color: #00205B;
 }
-footer div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer {
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: center;
   font-variant: small-caps; 
-  height: 15vh;
+  height: 10vh;
+  border-top: 1px solid rgba(69,65,64,.2);
+}
+.footer #shumei, .footer #wiggins {
+  color: #ffffff;
+}
+.footer p {
+  margin: 0 20px;
+}
+.footer .nav-logo a:hover, .footer .nav-logo a:focus, .footer .nav-logo a:active {
+  text-decoration-color: #ffffff;
+}
+@media screen and (min-width:768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
