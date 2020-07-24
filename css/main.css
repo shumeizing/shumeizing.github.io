@@ -582,6 +582,9 @@ nav {
     margin-bottom: 3%;
   }
 }
+.service .boxInner p:hover {
+  cursor: url("../icon/cursor.png"), auto;
+}
 .serviceMenu {
   color: #016d49;
   display: flex;
@@ -618,6 +621,7 @@ nav {
 }
 .safety li:hover {
   color: #BF0D3E;
+  cursor: url("../icon/cursor.png"), auto;
 }
 @media screen and (min-width:768px) {
   .safety li {
@@ -751,6 +755,9 @@ nav {
 #facebook {
   width: 30px;
   margin: -3px;
+}
+#facebook:hover {
+  width: 40px;
 }
 .foot-logo a {
   text-decoration: none;
