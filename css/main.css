@@ -757,7 +757,7 @@ nav {
   margin: -3px;
 }
 #facebook:hover {
-  width: 40px;
+  width: 35px;
 }
 .foot-logo a {
   text-decoration: none;
@@ -769,4 +769,10 @@ nav {
 }
 .footer p {
   font-size: .8rem;
+}
+#backToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
 }
