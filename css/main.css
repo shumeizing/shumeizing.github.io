@@ -9,6 +9,14 @@ body {
   background-color: #ffffff;
   height: 100%;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  flex: 1; 
+}
 h1 {
   font-size: 3rem;
 }
@@ -65,7 +73,7 @@ nav {
   height: 50px;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(69,65,64,.2);
-  z-index: 2;
+  z-index: 1;
 }
 .nav-logo {
   color: #555555;
@@ -76,7 +84,7 @@ nav {
   text-transform: none;
   height: 50px;
   line-height: 50px;
-  padding: 0 20px;
+  padding: 0 2%;
   background-color: transparent;
 }
 .nav-logo a {
@@ -173,7 +181,6 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    z-index: 1;
   }
   .nav-toggle {
     display: none;
@@ -296,11 +303,8 @@ nav {
 /***************************************************
 # Main
 ***************************************************/
-.wrapper {
-  min-height: 100%;
-  margin-top: 6vh;
-  margin-bottom: -10vh;
-}
+
+
 
 /***************************************************
 # About
@@ -327,7 +331,6 @@ nav {
   color: #00205B;
 }
 .divLeft > img {
-  display: flex;
   max-height: 70vh;
   min-height: 40vh;
   box-shadow: 15px 15px 10px -10px #3e4444;
@@ -342,6 +345,12 @@ nav {
   }
   .about .divLeft, .about .divRight {
     padding: 5% 2%;
+  }
+  .divLeft {
+    flex: 30%;
+  }
+  .divRight {
+    flex: 70%;
   }
 }
 
@@ -725,34 +734,38 @@ nav {
 /***************************************************
 # Footer
 ***************************************************/
-.push, .footer {
-  height: 10vh;
-  background-color: #00205B;
-}
 .footer {
-  color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
-  text-align: center;
-  font-variant: small-caps; 
-  height: 10vh;
-  border-top: 1px solid rgba(69,65,64,.2);
-}
-.footer #shumei, .footer #wiggins {
+  justify-content: flex-start;
+  height: auto;
   color: #ffffff;
-}
-.footer p {
-  margin: 0 20px;
-}
-.footer .nav-logo a:hover, .footer .nav-logo a:focus, .footer .nav-logo a:active {
-  text-decoration-color: #ffffff;
+  background-color: #00205B;
+  padding: 1% 2%;
 }
 @media screen and (min-width:768px) {
   .footer {
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
   }
+}
+.footer div, .footer p, .foot-logo, .foot-logo span {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+#facebook {
+  width: 30px;
+  margin: -3px;
+}
+.foot-logo a {
+  text-decoration: none;
+  padding: 0;
+}
+.foot-logo a:hover, .foot-logo a:focus, .foot-logo a:active, .foot-logo a:visited {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+.footer p {
+  font-size: .8rem;
 }
