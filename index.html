@@ -9,10 +9,9 @@
   <meta name="description" content="Shumei Wiggins, aka Shumei-zing Nails, provides wellness-focused nail services.">
   <meta name="keywords" content="Pedicure, Menicure, Nail Art, Nail Salon, Diabetic Manicure, Senior Manicure, Thick Toenails Care, CMP, Certified Master Pedicurist, Infection Control, Advanced Pedicure, Shellac, Foot Massage">
   <meta name="author" content="Shuli Paul">
-	
 	<script src="https://use.fontawesome.com/2861b2669f.js"></script>
 	<script src="js/jquery.min.js"></script>
-  
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="shortcut icon" href="icon/logo.png">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -20,47 +19,46 @@
 </head>
 
 <body>
-	
-	<!-- ============ Header ============  -->
-	<header>
-		<!-- ============ Navigation ============  -->
-		<nav class="navigation">
-			<div class="nav-logo">
-				<a href="">
-					<img src="icon/logo.png" alt="feet" />
-					<span id="shumei">Shumei</span>
-					<span id="wiggins">Wiggins</span>
-				</a>
-			</div>
-			<div class="nav-toggle">
-				<span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-			</div>
-			<ul class="nav-menu">
-				<li><a href="#about">About</a></li>
-				<li><a href="#specialties">Specialties</a></li>
-				<li><a href="#service">Service</a></li>
-				<li><a href="#safety">Safety</a></li>
-				<li><a href="#policies">Policies</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<!-- ============ End Navigation ============  -->
-
-		<!-- ============ BannerTop ============  -->
-		<section class="bannerTop"> 
-		  <div class="bnContainer">
-			  <div class="bnContent">
-			    <h1 id="shumei-zing">Shumei-zing Nails</h1>
-			    <h2 id="welcomeMsg">A wellness-focused service</h2>
-			  </div>
-		  </div>
-		</section> 		<!-- ============ End Banner ============  --> 
-  </header>	 <!-- ============ End Header ============  -->
-
-	<!-- ============ Main ============ -->
 	<main>
+	
+		<!-- ============ Header ============  -->
+		<header>
+			<!-- ============ Navigation ============  -->
+			<nav class="navigation">
+				<div class="nav-logo">
+					<a href="">
+						<img src="icon/logo.png" alt="feet" />
+						<span id="shumei">Shumei</span>
+						<span id="wiggins">Wiggins</span>
+					</a>
+				</div>
+				<div class="nav-toggle">
+					<span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+				</div>
+				<ul class="nav-menu">
+					<li><a href="#about">About</a></li>
+					<li><a href="#specialties">Specialties</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#safety">Safety</a></li>
+					<li><a href="#policies">Policies</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- ============ End Navigation ============  -->
+
+			<!-- ============ BannerTop ============  -->
+			<section class="bannerTop"> 
+			  <div class="bnContainer">
+				  <div class="bnContent">
+				    <h1 id="shumei-zing">Shumei-zing Nails</h1>
+				    <h2 id="welcomeMsg">A wellness-focused service</h2>
+				  </div>
+			  </div>
+			</section> 		<!-- ============ End Banner ============  --> 
+	  </header>	 <!-- ============ End Header ============  -->
+
 
 		<!-- ============ About ============ -->
 		<section class="flexDiv about">
@@ -369,8 +367,18 @@
             <li>
               <p class="addTitle">Phone</p>
               <ul class="addItem">
-			      		<li><img src="icon/cellphone.png"/ alt="cellphone"><a href="tel:+12817399138">(281) 739-9138</a></span></li>
-			      		<li><img src="icon/landline.png" alt="landline" /><a href="tel:+12815421400">(281) 542-1400</a></li>
+			      		<li>
+			      			<img src="icon/cellphone.png" alt="cellphone"/>
+			      			<a href="tel:+12817399138" id="cellphone">
+				      			(281) 739-9138
+				      		</a>
+			      		</li>
+			      		<li>
+			      			<img src="icon/landline.png" alt="landline"/>
+			      			<a href="tel:+12815421400" id="landline">
+				      			(281) 542-1400
+			      			</a>
+			      		</li>
 		      		</ul>
             </li>
             <li>
@@ -399,6 +407,7 @@
 			  </div>
 			</div>
 		</section>   <!-- =========== End Contact =========== -->
+
 	</main>
 
 	<footer>
