@@ -371,13 +371,13 @@ nav {
   box-shadow: 15px 15px 10px -10px #3e4444;
 }
 .carousel-inner .item img {
-  height: 50vh;
+  width: 75vw;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .carousel-inner .item img {
     height: 70vh;
-    margin: 0 auto;
+    width: auto;
   }
 }
 .carousel-indicators {
