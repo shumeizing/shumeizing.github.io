@@ -1,6 +1,6 @@
-/***************************************************
+/*************************
 # General
-***************************************************/
+*************************/
 html,
 body {
   color: #3e4444;
@@ -59,9 +59,9 @@ main a:hover:after, main a:focus:after, main a:active:after {
   display: none;
 }
 
-/***************************************************
+/*************************
 # Navigation Initial Mobile View
-***************************************************/
+*************************/
 nav {
   position: fixed;
   top: 0;
@@ -73,7 +73,7 @@ nav {
   height: 50px;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(69,65,64,.2);
-  z-index: 1;
+  z-index: 999;
 }
 .nav-logo {
   color: #555555;
@@ -133,9 +133,9 @@ nav {
   background-color: #BF0D3E;
 }
 
-/***************************************************
+/*************************
 # Navigation Menu Toggle
-***************************************************/
+*************************/
 .nav-menu {
   position: absolute;
   top: 50px;
@@ -173,9 +173,9 @@ nav {
   outline: none;
 }
 
-/***************************************************
+/*************************
 # Navigation Large Screen View
-***************************************************/
+*************************/
 @media screen and (min-width:768px) {
   .navigation {
     display: flex;
@@ -215,9 +215,9 @@ nav {
   }
 }
 
-/***************************************************
+/*************************
 # Icon Bars Animation
-***************************************************/
+*************************/
 .nav-toggle.active .icon-bar:nth-child(1) {
   top: 24px;
   -webkit-transform: rotate(45deg);
@@ -234,9 +234,9 @@ nav {
   transform: rotate(-45deg);
 }
 
-/***************************************************
+/*************************
 # Top Banner
-***************************************************/
+*************************/
 .bannerTop {
   position: relative;
   margin-top: 50px;
@@ -300,9 +300,9 @@ nav {
   }
 }
 
-/***************************************************
+/*************************
 # About
-***************************************************/
+*************************/
 .flexDiv {
   display: flex;
   flex-direction: column;
@@ -348,9 +348,75 @@ nav {
   }
 }
 
-/***************************************************
+/*************************
+# Carousel
+*************************/
+.carousel-inner > .item > img {
+  height: 50vh;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .carousel-inner > .item > img {
+    height: 60vh;
+    margin: 0 auto;
+  }
+}
+.carousel a:hover:after, .carousel a:focus:after, .carousel a:active:after {
+  content: "";
+}
+.carousel-indicators .active {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  background-color: #bf0d3e;
+  border: 2px solid #bf0d3e;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,0);
+  opacity: .9;
+}
+.carousel-control:focus, .carousel-control:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 1;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.5)));
+  background-image: linear-gradient(to right,rgba(0,32,91,.5) 0,rgba(0,32,91,.0001) 100%);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  background-image: -webkit-linear-gradient(right, rgba(191,13,62,.5) 0, rgba(191,13,62,.0001) 100%);
+  background-image: -o-linear-gradient(right, rgba(191,13,62,.5) 0, rgba(191,13,62,.0001) 100%);
+  background-image: -webkit-gradient(linear, right top,left top, from(rgba(191,13,62,.5)),to(rgba(191,13,62,.0001)));
+  background-image: linear-gradient(to left, rgba(191,13,62,.5) 0, rgba(191,13,62,.0001) 100%);
+  background-repeat: repeat-x;
+}
+
+/*************************
 # Specialities
-***************************************************/
+*************************/
 .sectionTitle {
   color: #00205B;
   font-size: 2.2rem;
@@ -446,9 +512,9 @@ nav {
   }
 }
 
-/***************************************************
+/*************************
 # Credentials
-***************************************************/
+*************************/
 #credentials {
   color: #00205B;
   font-size: 1.5rem;
@@ -495,9 +561,9 @@ nav {
   background: #2b2626;
 }
 
-/***************************************************
+/*************************
 # Banners Between
-***************************************************/
+*************************/
 .bannerBetween {
   display: flex;
   flex-direction: column;
@@ -560,9 +626,9 @@ nav {
   }
 }
 
-/***************************************************
+/*************************
 # Service
-***************************************************/
+*************************/
 .service .boxInner {
   align-items: flex-start;
   width: 80vw;
@@ -611,9 +677,9 @@ nav {
 }
 
 
-/***************************************************
+/*************************
 # Safety Measures
-***************************************************/
+*************************/
 .safety li {
   font-size: 1.2rem;
   line-height: 2;
@@ -632,9 +698,9 @@ nav {
   }
 }
 
-/***************************************************
+/*************************
 # Policies
-***************************************************/
+*************************/
 .policy .boxInner {
   align-items: flex-start;
   padding-left: 5%;
@@ -663,9 +729,9 @@ nav {
   font-weight: 700;
 }
 
-/***************************************************
+/*************************
 # Contact
-***************************************************/
+*************************/
 .address {
   display: flex;
   flex-direction: column;
@@ -729,9 +795,9 @@ nav {
   box-shadow: 15px 15px 10px -10px #3e4444;
 }
 
-/***************************************************
+/*************************
 # Footer
-***************************************************/
+*************************/
 .footer {
   display: flex;
   flex-direction: column;
