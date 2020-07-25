@@ -790,7 +790,7 @@ nav {
   font-size: 1.2rem;
   width: 70%;
   padding-left: 2%;
-  border-left: 1px solid gray;
+  border-left: 1px solid #3e4444;
 }
 .addItem img {
   height: 15px;
@@ -814,11 +814,13 @@ nav {
     text-align: center;
   }
   .addItem {
-    border-right: 1px solid gray;
     border-left: none;
   }
-  .address li:last-child .addItem {
-    border-right: none;
+  .address > li:first-child > .addItem > li {
+    border-right: 1px solid #3e4444;
+  }
+  .address > li:nth-child(2) > .addItem > li:first-child {
+    border-right: 1px solid #3e4444;
   }
 }
 .contact iframe {
