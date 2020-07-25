@@ -385,7 +385,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(0,0,0,.6);
 }
 .carousel-indicators li {
   display: inline-block;
@@ -394,6 +393,7 @@ nav {
   margin: 2px;
   text-indent: -999px;
   cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.8);
   background-color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 50%;
