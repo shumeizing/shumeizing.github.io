@@ -12,7 +12,14 @@
   });
 })(jQuery);
 
-
+jQuery('a').filter(function() {
+  return this.hostname && this.hostname !== location.hostname;
+}).click(function(e) {
+  if(!confirm("You are about to proceed to an external website."))
+    {
+      e.preventDefault();
+    };
+});
 
 
 
