@@ -286,7 +286,7 @@ nav {
 #shumei-zing {
   color: #002868;
   font-family: "Shadows Into Light", cursive;
-  font-size: 12vw;
+  font-size: 15vw;
   font-weight: 900;
   font-variant: small-caps;
   text-shadow: 2px 2px #002868;
@@ -309,7 +309,7 @@ nav {
     transform:  none;
   }
   #shumei-zing {
-    font-size: 10vw;
+    font-size: 12vw;
   }
   #welcomeMsg {
     font-size: 5vw;
@@ -343,8 +343,8 @@ nav {
 .divLeft > img {
   max-height: 70vh;
   min-height: 40vh;
-  box-shadow: 15px 15px 10px -10px #3e4444;
   margin-top: 5%;
+  filter: drop-shadow(6px 6px 8px #3e4444);
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -367,8 +367,53 @@ nav {
 /*************************
 # Carousel
 *************************/
+.container {
+  width: 95vw;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}
+.container h3 {
+  display: none;
+}
 .carousel {
   box-shadow: 15px 15px 10px -10px #3e4444;
+}
+.carousel a:link,
+.carousel a:visited {
+  color: #ffffff;
+  opacity: 1;
+}
+.carousel a:hover {
+  color: #bf0d3e;
+}
+.carousel a:hover:after,
+.carousel a:focus:after,
+.carousel a:active:after {
+  content: "";
+  display: none;
+}
+.carousel-indicators {
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.8);
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  background-color: #bf0d3e;
+  border: 3px solid #ffffff;
 }
 .carousel-inner .item img {
   width: 75vw;
@@ -380,70 +425,44 @@ nav {
     width: auto;
   }
 }
-.carousel-indicators {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.carousel-indicators li {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 2px;
-  text-indent: -999px;
-  cursor: pointer;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.8);
-  background-color: #ffffff;
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-}
-.carousel-indicators .active {
-  width: 20px;
-  height: 20px;
-  margin: 1px;
-  background-color: #bf0d3e;
-  border: 3px solid #ffffff;
-}
-.carousel a:hover:after, .carousel a:focus:after, .carousel a:active:after {
-  content: "";
-  display: none;
-}
-.carousel-control.left, .carousel-control.right {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+.carousel-control {
   width: 10%;
-  color: #00205B;
-  font-size: 3rem;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-  background-color: rgba(0,0,0,0);
-  opacity: 1;
+  color: #ffffff;
+  opacity: .8;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control {
+    width: 15%;
+  }
 }
 .carousel-control.left {
-  left: 0;
+  background-image: -webkit-linear-gradient(left,rgba(62,68,68,.1) 0,rgba(62,68,68,0.00001) 100%);
+  background-image: linear-gradient(to right,rgba(62,68,68,.1) 0,rgba(62,68,68,0.00001) 100%);
 }
 .carousel-control.right {
-  right: 0;
+  background-image: -webkit-linear-gradient(right, rgba(62,68,68,.1) 0, rgba(62,68,68,0.00001) 100%);
+  background-image: linear-gradient(to left, rgba(62,68,68,.1) 0, rgba(62,68,68,0.00001) 100%);
 }
 .carousel-control:hover,
 .carousel-control:focus,
 .carousel-control:active {
-  color: #bf0d3e;
-  text-decoration: none;
-  outline: 0;
+  color: #ffffff;
   opacity: 1;
 }
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left,rgba(62,68,68,.2) 0,rgba(62,68,68,0.00001) 100%);
-  background-image: linear-gradient(to right,rgba(62,68,68,.2) 0,rgba(62,68,68,0.00001) 100%);
-  background-repeat: repeat-x;
+.glyphicon {
+  top: 0;
 }
-.carousel-control.right {
-  background-image: -webkit-linear-gradient(right, rgba(62,68,68,.2) 0, rgba(62,68,68,0.00001) 100%);
-  background-image: linear-gradient(to left, rgba(62,68,68,.2) 0, rgba(62,68,68,0.00001) 100%);
-  background-repeat: repeat-x;
+.carousel-control .glyphicon-chevron-left {
+  left: 40%;
+  margin-right: 5%;
 }
+.carousel-control .glyphicon-chevron-right {
+  right: 40%;
+  margin-left: 5%;
+}
+
 
 /*************************
 # Specialities
@@ -564,7 +583,7 @@ nav {
 }
 .listHead {
   font-size: 1.2rem;
-  padding-left: 2%;
+  padding-left: 0;
   font-weight: 600;
 }
 @media screen and (min-width:768px) {
@@ -577,7 +596,7 @@ nav {
 }
 .listItem li {
   text-align: left;
-  margin: 1em 0 1em 3em;
+  margin: 1em 0 1em 1.5em;
   position: relative;
 }
 .listItem li:before {
@@ -602,7 +621,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 30px;
+  margin: 5% 0;
   height: 50vh;
   background-color: #fff;
   background-position: 50%;
@@ -717,6 +736,7 @@ nav {
   font-size: 1.2rem;
   line-height: 2;
   font-style: normal;
+  margin: 1rem;
 }
 .safety li:hover {
   color: #BF0D3E;
@@ -727,7 +747,7 @@ nav {
     font-size: 1.2rem;
     line-height: 2;
     font-style: normal;
-    margin-left: 0;
+    margin: 1rem 2rem;
   }
 }
 
@@ -736,7 +756,7 @@ nav {
 *************************/
 .policy .boxInner {
   align-items: flex-start;
-  padding-left: 5%;
+  padding: 0 2%;
 }
 .policy details {
   width: 100%;
@@ -746,8 +766,9 @@ nav {
 }
 .policy summary {
   font-size: 1.2rem;
-  line-height: 2;
+  line-height: 1.6;
   font-weight: 700;
+  padding: 1% 0;
 }
 .policy summary:hover, .policy summary:focus, #policies summary:active {
   cursor: pointer;
@@ -876,4 +897,8 @@ nav {
   right: 10px;
   bottom: 10px;
   width: 50px;
+  opacity: .5;
+}
+#backToTop:hover {
+  opacity: 1;
 }
