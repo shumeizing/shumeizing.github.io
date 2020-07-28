@@ -362,6 +362,11 @@ nav {
     flex: 70%;
   }
 }
+@media screen and (min-width: 992px) {
+  .divRight p {
+    line-height: 2;
+  }
+}
 .tooltip {
   position: relative;
   display: inline-block;
@@ -799,6 +804,7 @@ nav {
 }
 .policy summary {
   font-size: 1.2rem;
+  line-height: 2;
   font-weight: 700;
   padding: 1% 0;
 }
