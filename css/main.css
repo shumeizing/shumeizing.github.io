@@ -483,7 +483,7 @@ nav {
 }
 .sectionTitle::before {
   content: "";
-  width: 300px;
+  width: 50vw;
   height: 3px;
   background-color: #BF0D3E;
   display: block;
@@ -491,7 +491,7 @@ nav {
 }
 .sectionTitle::after {
   content: "";
-  width: 300px;
+  width: 50vw;
   height: 3px;
   background-color: #BF0D3E;
   display: block;
@@ -503,7 +503,6 @@ nav {
     margin: 5% auto;
   }
   .sectionTitle::before, .sectionTitle::after {
-    width: 50vw;
     margin: 1vh auto;
   }
 }
