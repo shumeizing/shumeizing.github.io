@@ -1,7 +1,7 @@
 // --------------------------------------------------
 // Navigation Toggle
 // --------------------------------------------------
-(function($) {
+$(document).ready(function() {
   $(".nav-toggle").click(function() {
     $(".nav-toggle").toggleClass("active");
     $(".nav-menu").toggleClass("active");
@@ -10,8 +10,32 @@
     $(".nav-toggle").removeClass("active");
     $(".nav-menu").removeClass("active");
   });
-})(jQuery);
+});
 
+// --------------------------------------------------
+// Smooth Scroll
+// --------------------------------------------------
+$(document).ready(function(){
+  $(".nav-menu a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+// --------------------------------------------------
+// External Link Warning
+// --------------------------------------------------
 jQuery('a').filter(function() {
   return this.hostname && this.hostname !== location.hostname;
 }).click(function(e) {
@@ -20,6 +44,3 @@ jQuery('a').filter(function() {
       e.preventDefault();
     };
 });
-
-
-
